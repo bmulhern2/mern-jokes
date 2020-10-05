@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Show.css'
 
 export default class Show extends React.Component {
     constructor(props) {
@@ -36,8 +37,6 @@ export default class Show extends React.Component {
                         <h4><Link to="/"><span aria-hidden="true">Joke List</span></Link></h4>
                     </div>
                     <ul>
-                        <li>Title</li>
-                        <li>{this.state.joke.title}</li>
                         <li>Joke</li>
                         <li>{this.state.joke.joke}</li>
                     </ul>
