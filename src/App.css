@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+} #header {
+  background: orange;
+  color: white;
+  margin-left: -15%;
+  margin-right: -15%;
+}
