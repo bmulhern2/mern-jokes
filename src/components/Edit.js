@@ -27,7 +27,7 @@ export default class Edit extends React.Component {
             title: this.state.title,
             joke: this.state.joke
         }
-        fetch('http://localhost:7000/api/joke/'+this.props.match.params.id, {
+        fetch('http://localhost:7000/api/joke/' + this.props.match.params.id, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json',

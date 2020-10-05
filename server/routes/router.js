@@ -24,7 +24,7 @@ router.get('/joke/:_id', function(req, res) {
 router.post('/jokes', cors(), function(req, res) {
     Joke.create(req.body)
 })
-router.put('joke/:id', function(req, res) {
+router.put('joke/:_id', function(req, res) {
     console.log(req.params.id)
     /* Joke.findByIdAndUpdate(req.params.id, req.body, function(err, data) {
         if (err) console.log(err)
