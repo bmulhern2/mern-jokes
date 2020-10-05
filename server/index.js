@@ -13,9 +13,6 @@ let router = require('./routes/router')
 
 let app = express()
 app.use(express.static(path.join(__dirname, '../build')))
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, '../build'))
-})
 app.use('/api', router)
 http.createServer(app).listen(process.env.PORT, function() {
     console.log('Server Started on PORT ' + process.env.PORT)

@@ -9,6 +9,10 @@ router.use(cors())
 router.use(bodyParser.json())
 router.use(bodyParser.urlencoded({ extended: true }))
 
+router.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, '../../build'))
+})
+
 router.get('/jokes', function(req, res) {
     Joke.find({}, function(err, data) {
         if (!err) res.json(data)
