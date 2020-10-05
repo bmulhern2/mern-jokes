@@ -21,7 +21,7 @@
   },
   "engines": {
     "node": "v12.16.3"
-  }
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
